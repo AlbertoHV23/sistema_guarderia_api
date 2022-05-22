@@ -33,7 +33,7 @@
       <div id="collapseOne" class="collapse" aria-labelledby="collapseOne" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
               <a class="collapse-item" href="">Agregar</a>
-              <a class="collapse-item" href="">Buscar</a>
+              <a class="collapse-item" href="">Ver Registros</a>
           </div>
       </div>
 
@@ -49,7 +49,7 @@
            data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="">Agregar</a>
-            <a class="collapse-item" href="">Buscar</a>
+            <a class="collapse-item" href="">Ver Registros</a>
           </div>
       </div>
   </li>
@@ -72,7 +72,7 @@
          data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
           <a class="collapse-item" href="">Agregar</a>
-          <a class="collapse-item" href="">Buscar</a>
+          <a class="collapse-item" href="">Ver Registros</a>
         </div>
     </div>
     <li class="nav-item">
@@ -85,7 +85,7 @@
            data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="">Agregar</a>
-            <a class="collapse-item" href="">Buscar</a>
+            <a class="collapse-item" href="">Ver Registros</a>
           </div>
       </div>
 
@@ -99,7 +99,7 @@
              data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
               <a class="collapse-item" href="">Agregar</a>
-              <a class="collapse-item" href="">Buscar</a>
+              <a class="collapse-item" href="">Ver Registros</a>
             </div>
         </div>
       </li>
@@ -113,12 +113,12 @@
 </div>
 <!-- Nav Item - Pages Collapse Menu -->
 <li class="nav-item">
-    <a class="nav-link collapsed" href="" data-toggle="collapse" data-target="#collapseOne"
-       aria-expanded="true" aria-controls="collapseOne">
-       <i class="fa fa-tags" aria-hidden="true"></i>php artisan ui vue --auth
+    <a class="nav-link collapsed" href="" data-toggle="collapse" data-target="#collapseSix"
+       aria-expanded="true" aria-controls="collapseSix">
+       <i class="fa fa-tags" aria-hidden="true"></i>
         <span>Roles</span>
     </a>
-    <div id="collapseOne" class="collapse" aria-labelledby="collapseOne" data-parent="#accordionSidebar">
+    <div id="collapseSix" class="collapse" aria-labelledby="collapseSix" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="">Agregar</a>
             <a class="collapse-item" href="">Buscar</a>

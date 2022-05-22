@@ -23,4 +23,9 @@ Route::get('/', function () {return view('Front.home');});
 #*
 Route::get('sistema','App\Http\Controllers\System\SystemController@index')->name('Sistema');
 
+#PERSONAL:
+Route::get('personal','App\Http\Controllers\PersonalController@index')->name('Personal.create');
+
+// Route::get('sistema/administracion','App\Http\Controllers\System\SystemController@index')->name('Administracion');
+
 // Auth::routes();
