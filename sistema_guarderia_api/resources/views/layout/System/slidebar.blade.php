@@ -25,7 +25,7 @@
   </div>
   <!-- Nav Item - Pages Collapse Menu -->
   <li class="nav-item">
-      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne"
+      <a class="nav-link collapsed" href="" data-toggle="collapse" data-target="#collapseOne"
          aria-expanded="true" aria-controls="collapseOne">
          <i class="fa fa-users" aria-hidden="true"></i>
           <span>Personal</span>
@@ -105,14 +105,37 @@
       </li>
     </li>
   </li>
-{{-- </div> --}}
+  <!-- Divider -->
+  <hr class="sidebar-divider">
+  <!-- Heading -->
+  <div class="sidebar-heading text-white">
+    Roles
+</div>
+<!-- Nav Item - Pages Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="" data-toggle="collapse" data-target="#collapseOne"
+       aria-expanded="true" aria-controls="collapseOne">
+       <i class="fa fa-tags" aria-hidden="true"></i>php artisan ui vue --auth
+        <span>Roles</span>
+    </a>
+    <div id="collapseOne" class="collapse" aria-labelledby="collapseOne" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="">Agregar</a>
+            <a class="collapse-item" href="">Buscar</a>
+        </div>
+    </div>
+
+</li>
 
   <hr class="sidebar-divider d-none d-md-block">
 
-  <!-- Sidebar Toggler (Sidebar) -->
+  {{-- <!-- Sidebar Toggler (Sidebar) -->
   <div class="text-center d-none d-md-inline">
       <button class="rounded-circle border-0" id="sidebarToggle"></button>
-  </div>
+  </div> --}}
+
+ <hr>
+ <hr>
 
     <!-- Sidebar Toggler (Sidebar) -->
     <div class="text-center d-none d-md-inline">
