@@ -13,22 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+# ROOT
+Route::get('/', function () {return view('Front.home');});
 
-Route::get('inicio', function () {
-    return redirect(route('sistema.home'));
-});
-#* HOME
-Route::get('home','App\Http\Controllers\Front\HomeController@index')->name('Home');
+
+// #* HOME
+// Route::get('home','App\Http\Controllers\Front\HomeController@index')->name('Home');
 
 #*
 Route::get('sistema','App\Http\Controllers\System\SystemController@index')->name('Sistema');
 
 // Auth::routes();
-
-Route::middleware(['auth'])->prefix('sistema')->name('sistema.')->group(function () {
-
-  
-});
