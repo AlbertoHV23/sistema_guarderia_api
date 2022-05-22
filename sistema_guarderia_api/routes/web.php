@@ -18,4 +18,7 @@ Route::get('/', function () {
 });
 
 #* HOME
-Route::get('home','App\Http\Controllers\HomeController@index')->name('Home');
+Route::get('home','App\Http\Controllers\Front\HomeController@index')->name('Home');
+
+#*
+Route::get('sistema','App\Http\Controllers\System\SystemController@index')->name('Sistema');
