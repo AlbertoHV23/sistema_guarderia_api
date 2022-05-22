@@ -12,7 +12,7 @@
     <ul class="navbar-nav ml-auto">
 
     <li class="nav-item">
-        <a href="" class=" btn btn-secondary btn-sm mt-3">Ir a sitio web</a>
+        {{-- <a href="" class=" btn btn-secondary btn-sm mt-3">Ir a sitio web</a> --}}
         </li>
 
         <div class="topbar-divider d-none d-sm-block"></div>
@@ -22,7 +22,7 @@
             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small"></span>
-                <img src=""  height="40" width="40" />
+                <img src="https://scontent.fntr6-1.fna.fbcdn.net/v/t39.30808-6/242500645_4355555301192154_3999385225612146257_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=fF3yQBs0YFgAX9lgyIR&_nc_ht=scontent.fntr6-1.fna&oh=00_AT8B3j9V1INta8mF9m-OSm2CeVAYGt1DRXtOvFv3iRZw2A&oe=628FA6B5"  height="40" width="40" />
             </a>
             <!-- Dropdown - User Information -->
             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
