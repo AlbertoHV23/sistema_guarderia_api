@@ -24,7 +24,7 @@
 <!-- /.preloader -->
 <div class="page-wrapper">
 
-    @include('layout.Front.menu')
+    {{-- @include('layout.Front.menu') --}}
 
     @yield('content')
 

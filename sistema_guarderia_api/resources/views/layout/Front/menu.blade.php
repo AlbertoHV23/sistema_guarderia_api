@@ -7,7 +7,7 @@
           <li class="header-section"><a href="#">Nosotros</a></li>
       </ul>
   </nav>
-  <a class="cta" href="#">Iniciar session</a>
+  <a class="cta" href="{{ route('login.index')}}">Iniciar session</a>
   <p class="menu cta">Menu</p>
 </header>
 <div id="mobile__menu" class="overlay">
