@@ -23,13 +23,13 @@ Route::get('/', function () {return view('Front.home');});
 // Route::get('home','App\Http\Controllers\Front\HomeController@index')->name('Home');
 
 #*
-Route::get('/sistema','App\Http\Controllers\System\SystemController@index')->name('Sistema');
+Route::get('/sistema','App\Http\Controllers\System\SystemController@index')->name('sistema.index');
 
 #PERSONAL:
-Route::get('personal','App\Http\Controllers\PersonalController@index')->name('Personal.create');
+Route::get('/sistema/administracion/personal/registrar','App\Http\Controllers\PersonalController@index')->name('personal.create');
 
 
 #LOGIN
-Route::get('login','App\Http\Controllers\LoginController@index')->name('login.index');
+Route::get('/login','App\Http\Controllers\LoginController@index')->name('login.index');
 
 // Auth::routes();

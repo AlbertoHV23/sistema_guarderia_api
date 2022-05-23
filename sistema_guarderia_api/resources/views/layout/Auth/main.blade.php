@@ -28,7 +28,7 @@
 
     @yield('content')
 
-    @include('layout.Front.footer')
+    {{-- @include('layout.Front.footer') --}}
 
 
 

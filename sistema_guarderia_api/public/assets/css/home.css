@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
   }
+  body{
+    background-color:#e8edee;
+  }
   
   header {
     display: flex;
@@ -127,6 +130,26 @@
     color: #edf0f1;
     cursor: pointer;
   }
+
+
+  /* LOGIN*/
+  .login{
+    margin-top: 100px;
+    width: 60%;
+  }
+  .card-section-btn{
+    margin: auto;
+    width: 25%;
+    text-align: center;
+
+  }
+
+  .btn_login{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  /* */
   
   @media screen and (max-height: 450px) {
     .overlay a {
