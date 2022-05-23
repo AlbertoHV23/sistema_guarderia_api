@@ -2,7 +2,7 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
   <!-- Sidebar - Brand -->
-  <a class="sidebar-brand d-flex align-items-center justify-content-center" href="">
+  <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('sistema.index')}}">
       <div class="sidebar-brand-text mx-3">Sistema Guarderia</div>
   </a>
 
@@ -120,7 +120,7 @@
     </a>
     <div id="collapseSix" class="collapse" aria-labelledby="collapseSix" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="">Agregar</a>
+            <a class="collapse-item" href="{{ route('roles.create')}}">Agregar</a>
             <a class="collapse-item" href="">Buscar</a>
         </div>
     </div>

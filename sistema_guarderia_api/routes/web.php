@@ -16,19 +16,18 @@ use Illuminate\Support\Facades\Route;
 
 # ROOT
 Route::get('/', function () {return view('Front.home');});
-// Route::get('/', function () {return view('login');});
 
 
-// #* HOME
-// Route::get('home','App\Http\Controllers\Front\HomeController@index')->name('Home');
-
-#*
+#*SISTEMA
 Route::get('/sistema','App\Http\Controllers\System\SystemController@index')->name('sistema.index');
 
 #PERSONAL:
-Route::get('/sistema/administracion/personal/registrar','App\Http\Controllers\PersonalController@index')->name('personal.create');
+Route::get('/sistema/personal/registrar','App\Http\Controllers\PersonalController@index')->name('personal.create');
 
+#KIDS
 
+#ROLES
+Route::get('/sistema/roles/registrar','App\Http\Controllers\RolesController@index')->name('roles.create');
 #LOGIN
 Route::get('/login','App\Http\Controllers\LoginController@index')->name('login.index');
 
