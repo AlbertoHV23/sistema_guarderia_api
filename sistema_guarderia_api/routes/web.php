@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,17 +16,20 @@ use Illuminate\Support\Facades\Route;
 
 # ROOT
 Route::get('/', function () {return view('Front.home');});
+// Route::get('/', function () {return view('login');});
 
 
 // #* HOME
 // Route::get('home','App\Http\Controllers\Front\HomeController@index')->name('Home');
 
 #*
-Route::get('sistema','App\Http\Controllers\System\SystemController@index')->name('Sistema');
+Route::get('/sistema','App\Http\Controllers\System\SystemController@index')->name('Sistema');
 
 #PERSONAL:
 Route::get('personal','App\Http\Controllers\PersonalController@index')->name('Personal.create');
 
-// Route::get('sistema/administracion','App\Http\Controllers\System\SystemController@index')->name('Administracion');
+
+#LOGIN
+// Route::get('/login','App\Http\Controllers\Auth\LoginController@index')->name('login');
 
 // Auth::routes();

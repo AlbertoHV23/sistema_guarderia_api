@@ -5,15 +5,15 @@
     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
         <i class="fa fa-bars"></i>
     </button>
-
+    <div class="sucursal">
+        <h6 class="text-black text-align text-bold">Guardería Infantil San Nicolás</h6>
+    </div>
+    
 
 
     <!-- Topbar Navbar -->
     <ul class="navbar-nav ml-auto">
 
-    <li class="nav-item">
-        {{-- <a href="" class=" btn btn-secondary btn-sm mt-3">Ir a sitio web</a> --}}
-        </li>
 
         <div class="topbar-divider d-none d-sm-block"></div>
        

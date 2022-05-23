@@ -9831,6 +9831,11 @@
   .scroll-to-top i {
     font-weight: 800;
   }
+
+  .text-bold{
+    font-weight: bold;
+    font-size: 20px;
+  }
   
   @-webkit-keyframes growIn {
     0% {

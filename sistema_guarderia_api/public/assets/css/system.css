@@ -21,3 +21,9 @@
     color: white;
     text-decoration: none;
 }
+
+.sucursal{
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+}
