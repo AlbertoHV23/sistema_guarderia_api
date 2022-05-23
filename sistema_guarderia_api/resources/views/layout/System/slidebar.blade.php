@@ -48,7 +48,7 @@
       <div id="collapseTwo" class="collapse" aria-labelledby="collapseTwo"
            data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="">Agregar</a>
+            <a class="collapse-item" href="{{ route('kids.create')}}">Agregar</a>
             <a class="collapse-item" href="">Ver Registros</a>
           </div>
       </div>

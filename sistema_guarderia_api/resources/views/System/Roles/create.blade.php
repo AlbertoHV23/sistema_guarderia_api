@@ -14,12 +14,12 @@
 
 @section('content')
 <div class="container-fluid">
-    <form action="" method="post"  enctype="multipart/form-data">
+    <form action="{{ route('Create.Roles')}}" method="post"  enctype="multipart/form-data">
     @csrf
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">Registrar de Roles</h6>
+            <h6 class="m-0 font-weight-bold text-primary">Registro de Roles</h6>
         </div>
 
         <div class="card-body">
@@ -40,8 +40,8 @@
 
             <div class="row">
                 <div class="mb-3 col-sm-12 col-mb-6 col-xl-6">
-                    <label for="rol" class="form-label">Rol:</label>
-                    <input type="text" class="form-control" id="rol" value="" name="rol" placeholder="Rol" required>
+                    <label for="role" class="form-label">Rol:</label>
+                    <input type="text" class="form-control" id="role" value="" name="role" placeholder="Rol" required>
                 </div>
 
                 <br>

@@ -27,4 +27,21 @@ class RolesController extends Controller
 
         return json_encode(['Status' => 'Success','data' => $data],200);
     }
+
+    public function store(Request $request)
+    {
+        $request->validate([
+            'role' => 'required',
+            'description' => 'nullable',
+        ]);
+
+        $data = new Roles();
+        $data->fill($request->all());
+
+        $data->save();
+
+        // flash('Rol Agregado correctamente')->success();
+        // return view('System.Roles.create');
+        return redirect(route('roles.create'));
+    }
 }

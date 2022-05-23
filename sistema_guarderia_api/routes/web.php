@@ -22,9 +22,10 @@ Route::get('/', function () {return view('Front.home');});
 Route::get('/sistema','App\Http\Controllers\System\SystemController@index')->name('sistema.index');
 
 #PERSONAL:
-Route::get('/sistema/personal/registrar','App\Http\Controllers\PersonalController@index')->name('personal.create');
+Route::get('/sistema/personal/registrar','App\Http\Controllers\PersonalController@index_create')->name('personal.create');
 
 #KIDS
+Route::get('/sistema/niños/registrar','App\Http\Controllers\KidsController@index_create')->name('kids.create');
 
 #ROLES
 Route::get('/sistema/roles/registrar','App\Http\Controllers\RolesController@index')->name('roles.create');
