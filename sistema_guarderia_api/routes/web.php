@@ -30,6 +30,6 @@ Route::get('personal','App\Http\Controllers\PersonalController@index')->name('Pe
 
 
 #LOGIN
-// Route::get('/login','App\Http\Controllers\Auth\LoginController@index')->name('login');
+Route::get('login','App\Http\Controllers\LoginController@index')->name('login');
 
 // Auth::routes();
