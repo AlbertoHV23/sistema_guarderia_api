@@ -22,6 +22,8 @@ Route::get('/login','App\Http\Controllers\LoginController@index')->name('login.i
 
 #Registro
 Route::get('/registro','App\Http\Controllers\RegisterController@index')->name('registro.index');
+Route::post('/registro','App\Http\Controllers\RegisterController@store')->name('registro.create');
+
 
 #*SISTEMA
 Route::get('/sistema','App\Http\Controllers\System\SystemController@index')->name('sistema.index');

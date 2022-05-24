@@ -30,4 +30,5 @@ Route::post('users/create','App\Http\Controllers\UserController@Create')->name('
 Route::post('roles/create','App\Http\Controllers\RolesController@store')->name('Create.Roles');
 Route::get('roles/all','App\Http\Controllers\RolesController@GetAll')->name('GetAll.Roles');
 
-
+#USERS
+Route::post('roles/create','App\Http\Controllers\RegisterController@store')->name('Create.Users');

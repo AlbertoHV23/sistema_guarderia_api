@@ -6,6 +6,11 @@
         <i class="fa fa-bars"></i>
     </button>
     <div class="sucursal">
+        @if( auth()->check() )
+        <li class="nav-item">
+            <h1 class="text-black">{{ auth()->user()->name}}</h1>
+        </li>
+        @endif
         <h6 class="text-black text-align text-bold">Guardería Infantil San Nicolás</h6>
     </div>
     
