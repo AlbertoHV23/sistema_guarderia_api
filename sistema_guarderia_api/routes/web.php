@@ -15,11 +15,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 # ROOT
-Route::get('/', function () {return view('Front.home');});
+Route::get('/', function () {return view('Front.home');})->name('home');;
 
+#LOGIN
+Route::get('/login','App\Http\Controllers\LoginController@index')->name('login.index');
+
+#Registro
+Route::get('/registro','App\Http\Controllers\RegisterController@index')->name('registro.index');
 
 #*SISTEMA
 Route::get('/sistema','App\Http\Controllers\System\SystemController@index')->name('sistema.index');
+
 
 #PERSONAL:
 Route::get('/sistema/personal/registrar','App\Http\Controllers\PersonalController@index_create')->name('personal.create');
@@ -29,7 +35,6 @@ Route::get('/sistema/niños/registrar','App\Http\Controllers\KidsController@inde
 
 #ROLES
 Route::get('/sistema/roles/registrar','App\Http\Controllers\RolesController@index')->name('roles.create');
-#LOGIN
-Route::get('/login','App\Http\Controllers\LoginController@index')->name('login.index');
+
 
 // Auth::routes();
