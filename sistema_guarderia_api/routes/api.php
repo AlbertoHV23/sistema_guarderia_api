@@ -32,7 +32,7 @@ Route::post('roles/create','App\Http\Controllers\RolesController@store')->name('
 Route::get('roles/all','App\Http\Controllers\RolesController@GetAll')->name('GetAll.Roles');
 
 #USERS
-Route::post('roles/create','App\Http\Controllers\RegisterController@store')->name('Create.Users');
+Route::post('users/create','App\Http\Controllers\RegisterController@store')->name('Create.Users');
 
 Route::post('test', function() {
     $credenciales = request()->only('email','password');
