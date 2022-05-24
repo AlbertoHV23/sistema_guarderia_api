@@ -11,4 +11,6 @@ class LoginController extends Controller
         return view('Auth.login');
         // return view('Front.home');
     }
+
+    
 }

@@ -13,14 +13,15 @@
     <div class="container-fluid login">
         {{-- <h2 align = "center" class="login-title">Iniciar Sesión</h2> --}}
 
-        <form aaction="" method="post"  enctype="multipart/form-data"">
+        <form action="{{route('test.test')}}" method="post"  enctype="multipart/form-data"">
+            @csrf
             <div class="imgcontainer">
                 <img src="{{asset('assets/img/LOGO.jpg')}}" alt="Avatar" class="avatar">
             </div>
 
             <div class="container">
-                <label for="mail"><b>Correo electrónico:</b></label>
-                <input type="email" class="form-control" id="mail" value="" name="mail" placeholder="example@mail.com" required>
+                <label for="email"><b>Correo electrónico:</b></label>
+                <input type="email" class="form-control" id="email" value="" name="email" placeholder="example@mail.com" required>
 
                 <label for="password"><b>Contraseña:</b></label>
                 <input type="password" class="form-control" id="password" value="" name="password" placeholder="******* " required>
@@ -38,4 +39,6 @@
         </form>
 
     </div>
+
+
 @endsection
