@@ -34,12 +34,12 @@ Route::get('roles/all','App\Http\Controllers\RolesController@GetAll')->name('Get
 #USERS
 Route::post('roles/create','App\Http\Controllers\RegisterController@store')->name('Create.Users');
 
-Route::post('test', function() {
-    $credenciales = request()->only('mail','password');
-    if (Auth::attempt($credenciales)){
-        return "You are login"; 
-    }
-    else{
-        return "You arent login"; 
-    }
-})->name('test.test');
+// Route::post('test', function() {
+//     $credenciales = request()->only('mail','password');
+//     if (Auth::attempt($credenciales)){
+//         return "You are login"; 
+//     }
+//     else{
+//         return "You arent login"; 
+//     }
+// })->name('test.test');
