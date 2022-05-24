@@ -9,7 +9,7 @@ class RolesController extends Controller
 {   
 
     public function index()
-    {
+    {   
         return view('System.Roles.create');
     }
     // Get all

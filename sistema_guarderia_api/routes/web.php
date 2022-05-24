@@ -28,7 +28,8 @@ Route::get('/sistema','App\Http\Controllers\System\SystemController@index')->nam
 
 
 #PERSONAL:
-Route::get('/sistema/personal/registrar','App\Http\Controllers\PersonalController@index_create')->name('personal.create');
+Route::get('/sistema/personal/registrar','App\Http\Controllers\PersonalController@index_create')->name('personal.index');
+Route::post('/sistema/personal/registrar','App\Http\Controllers\PersonalController@index_create')->name('personal.create');
 
 #KIDS
 Route::get('/sistema/niños/registrar','App\Http\Controllers\KidsController@index_create')->name('kids.create');

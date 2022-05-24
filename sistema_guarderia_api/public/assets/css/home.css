@@ -150,6 +150,32 @@
     text-align: center;
   }
   /* */
+
+  /* HOME*/
+  .carousel-item img{
+    max-width: 800px;
+    max-height: 400px;
+  }
+  .container-{
+    width: 100%;
+  }
+  .section-header{
+    margin:20px 0px;
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+  .section-container{
+    color: white;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    justify-items: center;
+  }
+  /* */
+
+
+
   
   @media screen and (max-height: 450px) {
     .overlay a {
