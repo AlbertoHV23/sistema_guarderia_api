@@ -38,7 +38,7 @@ Route::get('users/logout','App\Http\Controllers\LoginController@logoutUser')->na
 // ROLES
 Route::post('roles/create','App\Http\Controllers\RolesController@store')->name('Create.Roles');
 Route::get('roles/all','App\Http\Controllers\RolesController@dataindex')->name('GetAll.Roles');
-// Route::put('roles/update/{id}', 'App\Http\Controllers\RolesController@update')->name('Update.roles');
+Route::post('roles/update/{id}', 'App\Http\Controllers\RolesController@update')->name('Update.roles');
 
 #PERSONAL
 Route::post('personal/create','App\Http\Controllers\PersonalController@store')->name('Create.Personal');

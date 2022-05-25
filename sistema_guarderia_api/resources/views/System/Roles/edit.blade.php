@@ -13,7 +13,7 @@
 
 @section('content')
 <div class="container-fluid">
-    <form action="" method="post"  enctype="multipart/form-data">
+    <form action="{{route('Update.roles', $data->id)}}" method="post"  enctype="multipart/form-data">
         @csrf
         {{-- @method('PUT') --}}
     <!-- DataTales Example -->

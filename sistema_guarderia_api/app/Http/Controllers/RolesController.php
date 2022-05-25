@@ -68,12 +68,14 @@ class RolesController extends Controller
 
     public function update(Request $request, $id)
     {
+        // echo "<script type='text/javascript'>alert('New role added successfully');</script>";
         $request->validate([
             'role' => 'required',
             'description' => 'nullable',
         ]);
 
         $data = Roles::find($id);
+        echo $data;
         $data->fill($request->all());
         $data->save();
 
