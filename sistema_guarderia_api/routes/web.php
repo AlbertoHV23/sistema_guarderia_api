@@ -37,7 +37,8 @@ Route::post('/sistema/personal/registrar','App\Http\Controllers\PersonalControll
 Route::get('/sistema/niños/registrar','App\Http\Controllers\KidsController@index_create')->name('kids.create');
 
 #ROLES
-Route::get('/sistema/roles/registrar','App\Http\Controllers\RolesController@index')->name('roles.create');
+Route::get('/sistema/roles/registrar','App\Http\Controllers\RolesController@index_create')->name('roles.create');
+Route::get('/sistema/roles/registros','App\Http\Controllers\RolesController@index')->name('roles.index');
 
 
 

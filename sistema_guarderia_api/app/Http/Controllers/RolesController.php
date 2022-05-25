@@ -8,9 +8,15 @@ use Illuminate\Http\Request;
 class RolesController extends Controller
 {   
 
-    public function index()
+    public function index_create()
     {   
         return view('System.Roles.create');
+    }
+
+    public function index()
+    {   
+        $data = Roles::all();
+        return view('System.Roles.index',compact('data'));
     }
     // Get all
     public function GetAll(){
@@ -18,6 +24,14 @@ class RolesController extends Controller
         $data = Roles::all();
         return json_encode(['Status' => 'Success','data' => $data],200);
     }
+
+    public function dataindex(){
+        return datatables(Roles::get())
+            ->addColumn('btn', 'System.Roles.btn')
+            ->rawColumns(['btn'])
+            ->toJson();
+    }
+
 
     //Create function
     public function Create(Request $request){

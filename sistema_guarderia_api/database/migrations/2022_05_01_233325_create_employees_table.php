@@ -16,14 +16,14 @@ class CreateEmployeesTable extends Migration
         Schema::create('employees', function (Blueprint $table) {
             $table->id()->autoIncrement();
             $table->string('name');
-            $table->string('fathers_name');
-            $table->string('mothers_name');
+            $table->string('lastname');
+            // $table->string('mothers_name');
             $table->string('CURP')->unique();
             $table->string('NSS')->unique();
             $table->string('mail')->unique();
             // $table->string('password');
             $table->string('imagen')->nullable();
-            $table->string('gender');
+            // $table->string('gender');
             $table->unsignedBigInteger('rol_id');
             $table->rememberToken();
 

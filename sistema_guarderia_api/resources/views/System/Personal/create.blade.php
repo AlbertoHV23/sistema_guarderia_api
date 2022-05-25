@@ -14,7 +14,7 @@
 
 @section('content')
     <div class="container-fluid">
-        <form action="" method="post" enctype="multipart/form-data">
+        <form action="{{route('Create.Personal')}}" method="post" enctype="multipart/form-data">
             @csrf
             <!-- DataTales Example -->
             <div class="card shadow mb-4">
@@ -24,7 +24,7 @@
 
                 <div class="card-body">
 
-                    {{-- @if ($errors->any())
+                    @if ($errors->any())
 
                 <div class="alert alert-danger" role="alert">
                     <h4 class="alert-heading">¡Ha ocurrido un ERROR!</h4>
@@ -36,7 +36,7 @@
                         </ul>
                     </div>
                 </div>
-            @endif --}}
+            @endif
 
                     <div class="row">
                         <div class="mb-3 col-sm-12 col-mb-6 col-xl-6">
@@ -54,29 +54,31 @@
                         </div>
                         <br>
 
+                        
+                        <div class="mb-3 col-sm-12 col-mb-6 col-xl-6">
+                            <label for="CURP" class="form-label">CURP:</label>
+                            <input type="text" class="form-control" id="CURP" value="" name="CURP" placeholder="CURP"
+                                required>
+                        </div>
+
+                        <div class="mb-3 col-sm-12 col-mb-6 col-xl-6">
+                            <label for="NSS" class="form-label">NSS:</label>
+                            <input type="text" class="form-control" id="NSS" value="" name="NSS" placeholder="NSS"
+                                required>
+                        </div>
+
                         <div class="mb-3 col-sm-12 col-mb-6 col-xl-6">
                             <label for="mail" class="form-label">Email:</label>
                             <input type="text" class="form-control" id="mail" value="" name="mail" placeholder="Email"
                                 required>
                         </div>
 
-                        <div class="mb-3 col-sm-12 col-mb-6 col-xl-6">
-                            <label for="password" class="form-label">Contraseña:</label>
+                        {{-- <div class="mb-3 col-sm-12 col-mb-6 col-xl-6">
+                            <label for="password" class="form-label">Genero:</label>
                             <input type="text" class="form-control" id="password" value="" name="password"
                                 placeholder="Contraseña" required>
-                        </div>
+                        </div> --}}
 
-                        <div class="mb-3 col-sm-12 col-mb-6 col-xl-6">
-                            <label for="curp" class="form-label">CURP:</label>
-                            <input type="text" class="form-control" id="curp" value="" name="curp" placeholder="CURP"
-                                required>
-                        </div>
-
-                        <div class="mb-3 col-sm-12 col-mb-6 col-xl-6">
-                            <label for="nss" class="form-label">NSS:</label>
-                            <input type="text" class="form-control" id="nss" value="" name="nss" placeholder="NSS"
-                                required>
-                        </div>
 
                         <div class="mb-3 col-sm-12 col-mb-6 col-xl-6">
                             <label for="imagen" class="form-label">Imagen</label>

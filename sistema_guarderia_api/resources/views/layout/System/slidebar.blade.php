@@ -121,7 +121,7 @@
     <div id="collapseSix" class="collapse" aria-labelledby="collapseSix" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="{{ route('roles.create')}}">Agregar</a>
-            <a class="collapse-item" href="">Buscar</a>
+            <a class="collapse-item" href="{{ route('roles.index')}}">Ver Registros</a>
         </div>
     </div>
 
