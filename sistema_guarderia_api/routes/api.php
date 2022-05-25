@@ -34,9 +34,8 @@ Route::post('roles/create','App\Http\Controllers\RolesController@store')->name('
 Route::get('roles/all','App\Http\Controllers\RolesController@dataindex')->name('GetAll.Roles');
 
 #PERSONAL
-// ROLES
 Route::post('personal/create','App\Http\Controllers\PersonalController@store')->name('Create.Personal');
-Route::get('personal/all','App\Http\Controllers\PersonalController@GetAll')->name('GetAll.Personal');
+Route::get('personal/all','App\Http\Controllers\PersonalController@dataindex')->name('GetAll.Personal');
 
 #USERS
 Route::post('users/create','App\Http\Controllers\RegisterController@store')->name('Create.Users');
