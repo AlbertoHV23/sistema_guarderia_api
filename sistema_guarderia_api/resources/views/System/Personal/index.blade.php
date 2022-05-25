@@ -1,5 +1,5 @@
 @extends('layout.System.main')
-@section('pagetitle', 'Inicio')
+@section('pagetitle', 'Personal')
 
 @section('stylespage')
 @endsection
@@ -58,7 +58,7 @@
                 "header": {
                     "token": "{{ csrf_token() }}",
                 },
-                "ajax": "http://127.0.0.1:8000/api/personal/all",
+                "ajax": "https://sistema-guarderia.herokuapp.com/api/personal/all",
                 "columns": [
                     {data: 'id'},
                     {data: 'name'},

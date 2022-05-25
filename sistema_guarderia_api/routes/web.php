@@ -42,6 +42,9 @@ Route::get('/sistema/niños/registros','App\Http\Controllers\KidsController@inde
 #ROLES
 Route::get('/sistema/roles/registrar','App\Http\Controllers\RolesController@index_create')->name('roles.create');
 Route::get('/sistema/roles/registros','App\Http\Controllers\RolesController@index')->name('roles.index');
+Route::get('/sistema/roles/rol/{id}', 'App\Http\Controllers\RolesController@edit')->name('roles.rol');
+Route::put('/sistema/roles/rol/update/{id}', 'App\Http\Controllers\RolesController@update')->name('roles.rol.update');
+
 
 
 #EXPEDIENTE

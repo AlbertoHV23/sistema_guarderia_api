@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Foul;
 use App\Models\Kids;
 use Illuminate\Http\Request;
+// use Illuminate\Support\Facades\Storage;
 
 class FoulController extends Controller
 {
@@ -46,4 +47,6 @@ class FoulController extends Controller
         // return view('System.Roles.create');
         return redirect(route('faltas.create'));
     }
+
+    
 }

@@ -1,5 +1,5 @@
 @extends('layout.System.main')
-@section('pagetitle', 'Inicio')
+@section('pagetitle', 'Expediente Medico')
 
 @section('stylespage')
 @endsection

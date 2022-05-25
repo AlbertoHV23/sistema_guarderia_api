@@ -58,4 +58,26 @@ class RolesController extends Controller
         // return view('System.Roles.create');
         return redirect(route('roles.create'));
     }
+
+    public function edit($id)
+    {
+        $data = Roles::find($id);
+        // $cate = NoticiasCategoria::all();
+        return view('System.Roles.edit', compact('data'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $request->validate([
+            'role' => 'required',
+            'description' => 'nullable',
+        ]);
+
+        $data = Roles::find($id);
+        $data->fill($request->all());
+        $data->save();
+
+        // flash('Noticia Editada Correctamente')->success();
+        return redirect(route('roles.index'));
+    }
 }

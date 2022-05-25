@@ -1,5 +1,5 @@
 @extends('layout.System.main')
-@section('pagetitle', 'Inicio')
+@section('pagetitle', 'Faltas')
 
 @section('stylespage')
 @endsection
@@ -56,7 +56,7 @@
                 "header": {
                     "token": "{{ csrf_token() }}",
                 },
-                "ajax": "http://127.0.0.1:8000/api/faltas/all",
+                "ajax": "https://sistema-guarderia.herokuapp.com/api/faltas/all",
                 "columns": [
                     {data: 'id'},
                     {data: 'kid_id'},

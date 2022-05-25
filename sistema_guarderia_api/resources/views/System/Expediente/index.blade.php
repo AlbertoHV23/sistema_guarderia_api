@@ -1,12 +1,12 @@
 @extends('layout.System.main')
-@section('pagetitle', 'Inicio')
+@section('pagetitle', 'Expediente Medico')
 
 @section('stylespage')
 @endsection
 
 @section('page-header')
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <h1 class="h3 mb-0 text-gray-800">Lista de Personal</h1>
+    <h1 class="h3 mb-0 text-gray-800">Expediente Medico</h1>
 
 </div>
 @endsection
@@ -18,7 +18,7 @@
         <!-- DataTales Example -->
         <div class="card shadow mb-4">
             <div class="card-header py-3">
-                <h6 class="m-0 font-weight-bold text-primary">Lista de Personal</h6>
+                <h6 class="m-0 font-weight-bold text-primary">Expediente Medico</h6>
             </div>
             <div class="card-body">
                 <div class="table-responsive">
@@ -60,7 +60,7 @@
                 "header": {
                     "token": "{{ csrf_token() }}",
                 },
-                "ajax": "http://127.0.0.1:8000/api/expediente/all",
+                "ajax": "https://sistema-guarderia.herokuapp.com/api/expediente/all",
                 "columns": [
                     {data: 'id'},
                     {data: 'kid_id'},

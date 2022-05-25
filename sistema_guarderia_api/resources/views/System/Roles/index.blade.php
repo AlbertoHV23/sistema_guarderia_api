@@ -1,5 +1,5 @@
 @extends('layout.System.main')
-@section('pagetitle', 'Inicio')
+@section('pagetitle', 'Roles')
 
 @section('stylespage')
 @endsection
@@ -55,7 +55,7 @@
                 "header": {
                     "token": "{{ csrf_token() }}",
                 },
-                "ajax": "http://127.0.0.1:8000/api/roles/all",
+                "ajax": "https://sistema-guarderia.herokuapp.com/api/roles/all",
                 "columns": [
                     {data: 'id'},
                     {data: 'role'},
