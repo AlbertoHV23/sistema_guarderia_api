@@ -42,7 +42,7 @@
   <li class="nav-item">
       <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
          aria-expanded="true" aria-controls="collapseTwo">
-          <i class="fas fa-fw fa-key"></i>
+         <i class="fa fa-user" aria-hidden="true"></i>
           <span>Niños</span>
       </a>
       <div id="collapseTwo" class="collapse" aria-labelledby="collapseTwo"
@@ -84,8 +84,8 @@
       <div id="collapseFour" class="collapse" aria-labelledby="collapseFour"
            data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="">Agregar</a>
-            <a class="collapse-item" href="">Ver Registros</a>
+            <a class="collapse-item" href="{{ route('faltas.create')}}">Agregar</a>
+            <a class="collapse-item" href="{{ route('faltas.index')}}">Ver Registros</a>
           </div>
       </div>
 

@@ -51,3 +51,6 @@ Route::get('kid/all','App\Http\Controllers\KidsController@dataindex')->name('Get
 Route::post('expediente/create','App\Http\Controllers\ExpedienteController@store')->name('Create.Expediente');
 Route::get('expediente/all','App\Http\Controllers\ExpedienteController@dataindex')->name('GetAll.Expediente');
 
+#FALTAS
+Route::post('faltas/create','App\Http\Controllers\FoulController@store')->name('Create.Faltas');
+Route::get('faltas/all','App\Http\Controllers\FoulController@dataindex')->name('GetAll.Faltas');

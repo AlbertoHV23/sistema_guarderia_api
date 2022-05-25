@@ -48,4 +48,8 @@ Route::get('/sistema/roles/registros','App\Http\Controllers\RolesController@inde
 Route::get('/sistema/expediente/registrar','App\Http\Controllers\ExpedienteController@index_create')->name('expediente.create');
 Route::get('/sistema/expediente/registros','App\Http\Controllers\ExpedienteController@index')->name('expediente.index');
 
+#FALTAS
+Route::get('/sistema/faltas/registrar','App\Http\Controllers\FoulController@index_create')->name('faltas.create');
+Route::get('/sistema/faltas/registros','App\Http\Controllers\FoulController@index')->name('faltas.index');
+
 // Auth::routes();
