@@ -12,7 +12,21 @@ class SystemController extends Controller
     //
     public function index()
     {
+
+        session_start();
+        try {
+            $value = $_SESSION['email'];
+            if ($value !=""){
+                return view('System.home'); 
+            }
+            else{
+                return view('Front.home');
+            }
+        } catch (\Throwable $th) {
+            //throw $th;
+            return view('Front.home');
+        }
+     
         
-        return view('System.home');
     }
 }

@@ -28,6 +28,10 @@ class LoginController extends Controller
         if (Auth::attempt($credentials)){
             // $request->session()->regenerate();
             // return "You are login"; 
+            session_start();
+            $_SESSION['email'] = $request->email; 
+            // Get session values.
+            $value = $_SESSION['email'];
             return redirect()->to('/sistema'); 
 
         }
@@ -45,5 +49,38 @@ class LoginController extends Controller
 
     }
 
+    public function logoutUser(){
+
+
+        #auth()->user()->currentAccessToken()->delete();
+
+        session_start();
+
+        // Destruir todas las variables de sesión.
+        $_SESSION = array();
+
+        // Si se desea destruir la sesión completamente, borre también la cookie de sesión.
+        // Nota: ¡Esto destruirá la sesión, y no la información de la sesión!
+        if (ini_get("session.use_cookies")) {
+            $params = session_get_cookie_params();
+            setcookie(session_name(), '', time() - 42000,
+                $params["path"], $params["domain"],
+                $params["secure"], $params["httponly"]
+            );
+        }
+
+        // Finalmente, destruir la sesión.
+        session_destroy();
+        $_SESSION['email'] = "";
+        return redirect()->to('/login');
+
+        /*
+        # Cookies logout
+        auth()->logout();
+
+        return redirect()->to('/login');
+        */
+
+    }
     
 }

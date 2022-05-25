@@ -44,14 +44,15 @@
                 <div class="dropdown-divider"></div>
 
 
-                <a class="dropdown-item"  href=""
-                   ">
+                <a class="dropdown-item"  href="{{route('User.logout')}}"
+                   onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                     Cerrar Sessión
                 </a>
 
-                <form id="logout-form" action="" method="POST" class="d-none">
-                   
+                <form id="logout-form" action="{{route('User.logout')}}" method="POST" class="d-none">
+                    @csrf
                 </form>
             </div>
         </li>
