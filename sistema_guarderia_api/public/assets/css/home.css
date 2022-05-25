@@ -5,6 +5,7 @@
   }
   body{
     background-color:#2f3033;
+    
   }
   
   header {
@@ -152,30 +153,78 @@
   /* */
 
   /* HOME*/
-  .carousel-item img{
+  .carousel-item .image{
     max-width: 800px;
     max-height: 400px;
   }
   .container-{
     width: 100%;
+    color: black;
+
   }
   .section-header{
-    margin:20px 0px;
-    color: white;
+    padding:20px 0px;
+    color: rgb(243, 180, 45);
     text-align: center;
     width: 100%;
   }
   .section-container{
-    color: white;
     text-align: center;
     margin: auto;
     justify-content: center;
     justify-items: center;
+    color: black;
+
   }
   /* */
 
+  .padre {
+    display: flex;
+    justify-content: center;
+  }
+  .hijo p {
+    padding: 10px;
+    /* margin: 10px; */
+    font-size: 20px;
+  }
+  .section-nosotros{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: white;
+  }
 
+.servicios-header{
+  text-align: center;
+  padding: 20px;
+}
 
+.servicios-header i{
+  color: rgb(47, 47, 190);
+  font-size: 50px;
+  padding: 20px;
+}
+
+.servicios-container{
+  text-align: center;
+  padding-top: 30px;
+  color: black;
+
+}
+
+li{
+  list-style-type: none;
+}
+
+.section-servicios{
+  background-color: rgb(250, 245, 245);
+  padding-bottom: 80px;
+
+}
+
+.servicios-header{
+  color:rgb(243, 180, 45);;
+
+}
   
   @media screen and (max-height: 450px) {
     .overlay a {

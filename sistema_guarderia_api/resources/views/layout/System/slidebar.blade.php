@@ -137,10 +137,10 @@
  <hr>
  <hr>
 
-    <!-- Sidebar Toggler (Sidebar) -->
+    {{-- <!-- Sidebar Toggler (Sidebar) -->
     <div class="text-center d-none d-md-inline">
       <a href="" class="back-home">Ir a la pagina principal</a>
-  </div>
+  </div> --}}
 
 
 </ul>

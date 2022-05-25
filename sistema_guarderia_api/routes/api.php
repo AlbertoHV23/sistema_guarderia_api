@@ -28,6 +28,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('users/all','App\Http\Controllers\UserController@getAllUsers')->name('GetAll.Users');
 // Route::post('users/create','App\Http\Controllers\UserController@createUser')->name('Create.Users');
 Route::post('users/create','App\Http\Controllers\UserController@Create')->name('Create.Users');
+Route::get('users/perfil','App\Http\Controllers\UserController@getSessionUser')->name('Get.perfil');
 
 #USERS
 Route::post('users/create','App\Http\Controllers\RegisterController@store')->name('Create.Users');
