@@ -21,6 +21,7 @@ class CreateKidsTable extends Migration
             $table->string('CURP')->unique();
             $table->string('mail')->unique();
             // $table->string('password');
+            $table->string('imagen')->nullable();
             $table->string('gender');
             $table->rememberToken();
             $table->timestamps();
