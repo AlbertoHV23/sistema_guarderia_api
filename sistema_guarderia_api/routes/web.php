@@ -18,15 +18,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {return view('Front.home');})->name('home');;
 
 #LOGIN
-Route::get('/login','App\Http\Controllers\LoginController@index')->name('login.index');
+Route::get('login','App\Http\Controllers\LoginController@index')->name('login.index');
 
 #Registro
-Route::get('/registro','App\Http\Controllers\RegisterController@index')->name('registro.index');
-Route::post('/registro','App\Http\Controllers\RegisterController@store')->name('registro.create');
+Route::get('registro','App\Http\Controllers\RegisterController@index')->name('registro.index');
+Route::post('registro','App\Http\Controllers\RegisterController@store')->name('registro.create');
 
 
 #*SISTEMA
-Route::get('/sistema','App\Http\Controllers\System\SystemController@index')->name('sistema.index');
+Route::get('sistema','App\Http\Controllers\System\SystemController@index')->name('sistema.index');
 
 
 #PERSONAL:
@@ -38,6 +38,8 @@ Route::get('/sistema/niños/registrar','App\Http\Controllers\KidsController@inde
 
 #ROLES
 Route::get('/sistema/roles/registrar','App\Http\Controllers\RolesController@index')->name('roles.create');
+
+
 
 
 // Auth::routes();

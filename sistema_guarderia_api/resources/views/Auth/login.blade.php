@@ -13,7 +13,7 @@
     <div class="container-fluid login">
         {{-- <h2 align = "center" class="login-title">Iniciar Sesión</h2> --}}
 
-        <form action="{{route('test.test')}}" method="post"  enctype="multipart/form-data"">
+        <form action="{{route('User.test')}}"" method="post"  enctype="multipart/form-data"">
             @csrf
             <div class="imgcontainer">
                 <img src="{{asset('assets/img/LOGO.jpg')}}" alt="Avatar" class="avatar">

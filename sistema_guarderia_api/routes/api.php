@@ -21,6 +21,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
+// #*SISTEMA
+// Route::get('/sistema','App\Http\Controllers\System\SystemController@index')->name('sistema.index');
 
 #* Test route
 Route::get('users/all','App\Http\Controllers\UserController@getAllUsers')->name('GetAll.Users');
@@ -33,12 +35,19 @@ Route::get('roles/all','App\Http\Controllers\RolesController@GetAll')->name('Get
 
 #USERS
 Route::post('users/create','App\Http\Controllers\RegisterController@store')->name('Create.Users');
+Route::post('users/login','App\Http\Controllers\LoginController@loginUser')->name('User.test');
 
-Route::post('test', function() {
-    $credenciales = request()->only('email','password');
-    if (Auth::attempt($credenciales)){
-        return "You are login"; 
-    }
 
-    return $credenciales; 
-})->name('test.test');
+// Route::middleware(['auth'])->prefix('sistema')->name('sistema.')->group(function () {
+
+//     Route::prefix('test')->name('test.')->group(function (){
+//         Route::get('index','App\Http\Controllers\LoginController@index')->name('login');
+//         // Route::get('create','App\Http\Controllers\PermissionController@createRoles')->name('create');
+//         // Route::put('store','App\Http\Controllers\PermissionController@sotreRoles')->name('store');
+//         // Route::delete('delete','App\Http\Controllers\PermissionController@deleteRoles')->name('delete');
+//         // Route::get('data','App\Http\Controllers\PermissionController@dataRoles')->name('data');
+//     });
+
+
+    
+// });

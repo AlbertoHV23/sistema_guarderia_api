@@ -20,7 +20,7 @@ class CreateKidsTable extends Migration
             $table->string('mothers_name');
             $table->string('CURP')->unique();
             $table->string('mail')->unique();
-            $table->string('password');
+            // $table->string('password');
             $table->string('gender');
             $table->rememberToken();
             $table->timestamps();

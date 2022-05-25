@@ -21,7 +21,8 @@ class CreateEmployeesTable extends Migration
             $table->string('CURP')->unique();
             $table->string('NSS')->unique();
             $table->string('mail')->unique();
-            $table->string('password');
+            // $table->string('password');
+            $table->string('imagen')->nullable();
             $table->string('gender');
             $table->unsignedBigInteger('rol_id');
             $table->rememberToken();
