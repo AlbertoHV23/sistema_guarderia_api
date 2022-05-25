@@ -29,6 +29,10 @@ Route::get('users/all','App\Http\Controllers\UserController@getAllUsers')->name(
 // Route::post('users/create','App\Http\Controllers\UserController@createUser')->name('Create.Users');
 Route::post('users/create','App\Http\Controllers\UserController@Create')->name('Create.Users');
 
+#USERS
+Route::post('users/create','App\Http\Controllers\RegisterController@store')->name('Create.Users');
+Route::post('users/login','App\Http\Controllers\LoginController@loginUser')->name('User.test');
+
 // ROLES
 Route::post('roles/create','App\Http\Controllers\RolesController@store')->name('Create.Roles');
 Route::get('roles/all','App\Http\Controllers\RolesController@dataindex')->name('GetAll.Roles');
@@ -37,21 +41,13 @@ Route::get('roles/all','App\Http\Controllers\RolesController@dataindex')->name('
 Route::post('personal/create','App\Http\Controllers\PersonalController@store')->name('Create.Personal');
 Route::get('personal/all','App\Http\Controllers\PersonalController@dataindex')->name('GetAll.Personal');
 
-#USERS
-Route::post('users/create','App\Http\Controllers\RegisterController@store')->name('Create.Users');
-Route::post('users/login','App\Http\Controllers\LoginController@loginUser')->name('User.test');
+
+#KIDS
+Route::post('kid/create','App\Http\Controllers\KidsController@store')->name('Create.Kid');
+Route::get('kid/all','App\Http\Controllers\KidsController@dataindex')->name('GetAll.Kid');
 
 
-// Route::middleware(['auth'])->prefix('sistema')->name('sistema.')->group(function () {
+#EXPEDIENTE MEDICO
+Route::post('expediente/create','App\Http\Controllers\ExpedienteController@store')->name('Create.Expediente');
+Route::get('expediente/all','App\Http\Controllers\ExpedienteController@dataindex')->name('GetAll.Expediente');
 
-//     Route::prefix('test')->name('test.')->group(function (){
-//         Route::get('index','App\Http\Controllers\LoginController@index')->name('login');
-//         // Route::get('create','App\Http\Controllers\PermissionController@createRoles')->name('create');
-//         // Route::put('store','App\Http\Controllers\PermissionController@sotreRoles')->name('store');
-//         // Route::delete('delete','App\Http\Controllers\PermissionController@deleteRoles')->name('delete');
-//         // Route::get('data','App\Http\Controllers\PermissionController@dataRoles')->name('data');
-//     });
-
-
-    
-// });

@@ -49,7 +49,7 @@
            data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="{{ route('kids.create')}}">Agregar</a>
-            <a class="collapse-item" href="">Ver Registros</a>
+            <a class="collapse-item" href="{{ route('kids.index')}}">Ver Registros</a>
           </div>
       </div>
   </li>
@@ -71,8 +71,8 @@
     <div id="collapseThree" class="collapse" aria-labelledby="collapseThree"
          data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
-          <a class="collapse-item" href="">Agregar</a>
-          <a class="collapse-item" href="">Ver Registros</a>
+          <a class="collapse-item" href="{{ route('expediente.create')}}">Agregar</a>
+          <a class="collapse-item" href="{{ route('expediente.index')}}">Ver Registros</a>
         </div>
     </div>
     <li class="nav-item">

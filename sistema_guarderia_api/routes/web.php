@@ -36,12 +36,16 @@ Route::get('/sistema/personal/registros','App\Http\Controllers\PersonalControlle
 
 #KIDS
 Route::get('/sistema/niños/registrar','App\Http\Controllers\KidsController@index_create')->name('kids.create');
+Route::get('/sistema/niños/registros','App\Http\Controllers\KidsController@index')->name('kids.index');
+
 
 #ROLES
 Route::get('/sistema/roles/registrar','App\Http\Controllers\RolesController@index_create')->name('roles.create');
 Route::get('/sistema/roles/registros','App\Http\Controllers\RolesController@index')->name('roles.index');
 
 
-
+#EXPEDIENTE
+Route::get('/sistema/expediente/registrar','App\Http\Controllers\ExpedienteController@index_create')->name('expediente.create');
+Route::get('/sistema/expediente/registros','App\Http\Controllers\ExpedienteController@index')->name('expediente.index');
 
 // Auth::routes();

@@ -14,7 +14,7 @@
 
 @section('content')
 <div class="container-fluid">
-    <form action="" method="post"  enctype="multipart/form-data">
+    <form action="{{route('Create.Kid')}}" method="post"  enctype="multipart/form-data">
     @csrf
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
@@ -24,7 +24,7 @@
 
         <div class="card-body">
 
-            {{-- @if ($errors->any())
+            @if ($errors->any())
 
                 <div class="alert alert-danger" role="alert">
                     <h4 class="alert-heading">¡Ha ocurrido un ERROR!</h4>
@@ -36,7 +36,7 @@
                         </ul>
                     </div>
                 </div>
-            @endif --}}
+            @endif
 
             <div class="row">
                 <div class="mb-3 col-sm-12 col-mb-6 col-xl-6">
@@ -56,20 +56,17 @@
                     <label for="mail" class="form-label">Email:</label>
                     <input type="text" class="form-control" id="mail" value="" name="mail" placeholder="Email" required>
                 </div>
-
+{{-- 
                 <div class="mb-3 col-sm-12 col-mb-6 col-xl-6">
                     <label for="password" class="form-label">Contraseña:</label>
                     <input type="text" class="form-control" id="password" value="" name="password" placeholder="Contraseña" required>
-                </div>
-
-                {{-- <div class="mb-3 col-sm-12 col-mb-6 col-xl-6">
-                    <label for="curp" class="form-label">CURP:</label>
-                    <input type="text" class="form-control" id="curp" value="" name="curp" placeholder="CURP" required>
                 </div> --}}
 
+         
+
                 <div class="mb-3 col-sm-12 col-mb-6 col-xl-6">
-                    <label for="nss" class="form-label">NSS:</label>
-                    <input type="text" class="form-control" id="nss" value="" name="nss" placeholder="NSS" required>
+                    <label for="CURP" class="form-label">CURP:</label>
+                    <input type="text" class="form-control" id="CURP" value="" name="CURP" placeholder="CURP" required>
                 </div>
 
                 <div class="mb-3 col-sm-12 col-mb-6 col-xl-6">
@@ -78,13 +75,15 @@
                     <small>Tamaño Maximo 1MB, Resolución Maxima: 1920px * 1080px</small>
                 </div>
 
-                {{-- <div class="mb-3 col-sm- col-mb-6 col-xl-6 ">
-                    <label for="rol_id" class="form-label">Rol</label>
-                    <select name="rol_id" class="form-control" id="rol_id" required>
+                <div class="mb-3 col-sm- col-mb-6 col-xl-6 ">
+                    <label for="gender" class="form-label">Genero</label>
+                    <select name="gender" class="form-control" id="gender" >
                         <option value="">Selecciona...</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
                   
                     </select>
-                </div> --}}
+                </div>
                 <br>
 
         

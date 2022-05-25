@@ -68,6 +68,6 @@ class PersonalController extends Controller
 
         // flash('Rol Agregado correctamente')->success();
         // return view('System.Roles.create');
-        return redirect(route('roles.create'));
+        return redirect(route('personal.create'));
     }
 }
